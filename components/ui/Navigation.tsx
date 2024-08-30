@@ -15,6 +15,11 @@ import {
 import { cn } from '@/lib/utils'
 import { ArrowUpRight } from 'lucide-react'
 
+interface ListItemProps extends React.ComponentPropsWithoutRef<'a'> {
+  title: string;
+  icon?: boolean;
+}
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'Alert Dialog',
@@ -138,7 +143,7 @@ export function Navigation() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
-  React.ComponentPropsWithoutRef<'a'>
+  ListItemProps
 >(({ className, title, icon, children, ...props }, ref) => {
   return (
     <li>
