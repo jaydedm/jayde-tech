@@ -116,6 +116,16 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <div className='mobile z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white p-20 bg-gradient-to-r from-purple-600 via-rose-500 to-indigo-400 text-transparent bg-clip-text' style={{display: 'none'}}>
+        <p>The mobile experience is not ready.</p>
+        <br></br>
+        <p>Please view on a device with a larger display.</p>
+        <br></br>
+        <p>Thank you.</p>
+        <br></br>
+        <br></br>
+        <p>- Jayde</p>
+      </div>
     </>
   )
 }

@@ -63,6 +63,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -71,3 +72,16 @@
 body {
   overflow: visible !important
 }
+
+@media screen and (max-width: 1520px) {
+  main {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .mobile {
+    display: block !important
+  }
+}
+
+
