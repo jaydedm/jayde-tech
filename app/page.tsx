@@ -80,7 +80,7 @@ export default function Home() {
               A premium User Experience built from the ground up to enable
               scaling and data analytics.
               <br />
-              for the city's new amphitheater.
+              for the city&apos;s new amphitheater.
               <br />
               I proposed, designed, and implemented this in close collaboration
               with

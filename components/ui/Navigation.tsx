@@ -76,46 +76,59 @@ export function Navigation() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href='/docs' title='My Resume' icon>
+              <ListItem href='https://docs.google.com/document/d/1wEkJZ4qpyiCI84VbAMPUC6oOGMNTWR8x_oqfqbMofr0/edit?usp=sharing' title='My Resume' icon>
                 My work history with software.
               </ListItem>
               <ListItem
-                href='/docs/installation'
+                href='https://www.youtube.com/playlist?list=PLIx4umQRRZ7bHnHyqRFjrfunhi4xitjZj'
                 title='Coding Fundamentals Lectures'
               >
-                A playlist of my lecture series covering fundamentals in Web
-                Devleopment.
+                My lecture series of Fundamentals in Web
+                Development.
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Live Projects</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
+              <li className='row-span-3'>
+                <NavigationMenuLink asChild>
+                  <a
+                    className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
+                    href='/'
+                  >
+                    {/* <JMInitialsIcon className={undefined} /> */}
+                    <div className='mb-2 mt-4 text-lg font-medium'>Porfolio Highlights</div>
+                    <p className='text-sm leading-tight text-muted-foreground'>
+                      The best highlights with source code can be found below on this page, but here are live links to public enterprise applications I have been a significant contributor to.
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <ListItem href='https://www.petco.com/shop/en/petcostore/c/vitalcare' title='PetCo' >
+                Set up a free PetCo Account to see Vital Care Premiere.
               </ListItem>
               <ListItem
-                href='/docs/primitives/typography'
-                title='Full-Stack Lectures'
+                href='https://www.ets.org/solutions/clients/nextgen-enaep.html'
+                title='ETS'
               >
-                A playlist of my lecture series covering more advanced Web
-                Development topics.
+               This raises the quality of education around the world.
+              </ListItem>
+              <ListItem
+                href='https://www.agriculture.com/innovative-pricing-structures-are-shaping-agriculture-7559351'
+                title='Bayer'
+              >
+                An article about the groundbreaking work at Bayer.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href='/docs' legacyBehavior passHref>
+          <Link href='mailto:jayde@jaydemitchell.com' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              Contact Me
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
