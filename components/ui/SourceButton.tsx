@@ -13,7 +13,7 @@ export default function SourceButton() {
     <TooltipProvider>
       <Tooltip delayDuration={0}>
         <TooltipTrigger asChild>
-          <Button >
+          <Button disabled style={{pointerEvents: 'auto'}}>
             <Github className='mr-2 h-4 w-4' /> Source Code
           </Button>
         </TooltipTrigger>

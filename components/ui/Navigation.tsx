@@ -88,8 +88,8 @@ export function Navigation() {
                 href='https://www.youtube.com/playlist?list=PLIx4umQRRZ7bHnHyqRFjrfunhi4xitjZj'
                 title='Coding Fundamentals Lectures'
               >
-                My lecture series of Fundamentals in Web
-                Development.
+                My lecture series of Web
+                Development Fundamentals.
               </ListItem>
             </ul>
           </NavigationMenuContent>

@@ -13,7 +13,7 @@ export default function LiveDemoLinkButton() {
     <TooltipProvider>
       <Tooltip delayDuration={0}>
         <TooltipTrigger asChild>
-          <Button variant={'ghost'} >
+          <Button variant={'ghost'} disabled style={{pointerEvents: 'auto'}} >
             <ArrowUpRight className='mr-2 h-4 w-4' /> Live Demo
           </Button>
         </TooltipTrigger>
