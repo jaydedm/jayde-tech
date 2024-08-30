@@ -3,16 +3,19 @@ import AnimatedGridPattern from '@/components/magicui/animated-grid-pattern'
 
 export function AnimatedGridPatternDemo() {
   return (
-    <div className='relative flex h-[500px] w-full  justify-center overflow-hidden rounded-lg bg-background p-20 '>
+    <div className='relative flex h-[700px] w-full  justify-center overflow-hidden rounded-lg bg-background p-20 '>
       <div>
         {/* <div>
           <img src='https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg' height={50} width={50} className='text-right absolute right-0 bottom-0'/>
           <img src='https://coursera-university-assets.s3.amazonaws.com/33/e428228bb140e69ae9313e7c295cb4/berklee_coursera_design_assets_logo_4.png' height={100} width={100} className='text-right absolute right-16 bottom-0'/>
         </div> */}
-        <p className='z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white p-20'>
+        <p className='z-10 whitespace-pre-wrap text-center text-7xl font-medium tracking-tighter text-black dark:text-white p-20 bg-gradient-to-r from-purple-600 via-rose-500 to-indigo-400 text-transparent bg-clip-text'>
           Welcome
         </p>
-          <div className='flex justify-center items-center space-x-24 p-4 mt-16'>
+        <p className='z-10 whitespace-pre-wrap text-center text-xl font-bold tracking-tighter text-black dark:text-white mt-40 '>
+          TRUSTED BY
+        </p>
+          <div className='flex justify-center items-center space-x-24 p-4 mt-8'>
             <img
               className='w-1/5 h-automax-w-[300px]'
               src='https://upload.wikimedia.org/wikipedia/en/a/a4/Express_Scripts_logo.svg'
