@@ -99,7 +99,6 @@ export function Navigation() {
                     className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md'
                     href='/'
                   >
-                    {/* <JMInitialsIcon className={undefined} /> */}
                     <div className='mb-2 mt-4 text-lg font-medium'>Porfolio Highlights</div>
                     <p className='text-sm leading-tight text-muted-foreground'>
                       The best highlights with source code can be found below on this page, but here are live links to public enterprise applications I have been a significant contributor to.
