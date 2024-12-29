@@ -18,7 +18,7 @@ export default function LiveDemoLinkButton() {
           </Button>
         </TooltipTrigger>
         <TooltipContent>
-          <p>Releasing October 2024</p>
+          <p>Releasing 2025</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
