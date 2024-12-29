@@ -77,8 +77,8 @@ export default function Home() {
             <p className='font-extralight'>The City of Rancho Mirage</p>
             <p className='mt-4 font'></p>
             <p className='mt-4 font'>
-              A premium User Experience built from the ground up to enable
-              scaling and data analytics.
+              A premium User Experience built from the ground up, enabling
+              scaling and data analytics
               <br />
               for the city&apos;s new amphitheater.
               <br />
@@ -94,6 +94,7 @@ export default function Home() {
                   <li>Prevent double-booking ticket sales.</li>
                   <li>Have an animated interactive seating map.</li>
                   <li>Have code-free administrative editing tools.</li>
+                  <li>User tools to manage their tickets and problems to relieve box office bottleneck</li>
                   <li>Have a lightning-fast UX.</li>
                 </ul>
               </div>

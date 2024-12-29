@@ -112,7 +112,7 @@ export function Navigation() {
                 </NavigationMenuLink>
               </li>
               <ListItem href='https://www.petco.com/shop/en/petcostore/c/vitalcare' title='PetCo' >
-                Set up a free PetCo Account to see Vital Care Premiere.
+                Experience Vital Care Premiere alongside its 24 million users.
               </ListItem>
               <ListItem
                 href='https://www.ets.org/solutions/clients/nextgen-enaep.html'
