@@ -112,19 +112,31 @@ export function Navigation() {
                 </NavigationMenuLink>
               </li>
               <ListItem href='https://www.petco.com/shop/en/petcostore/c/vitalcare' title='PetCo' >
-                Experience Vital Care Premiere alongside its 24 million users.
+                Join Vital Care Premiere alongside 24 million users.
               </ListItem>
               <ListItem
                 href='https://www.ets.org/solutions/clients/nextgen-enaep.html'
                 title='ETS'
               >
-               This raises the quality of education around the world.
+               Raising the quality of education around the world.
               </ListItem>
               <ListItem
                 href='https://www.agriculture.com/innovative-pricing-structures-are-shaping-agriculture-7559351'
                 title='Bayer'
               >
                 An article about the groundbreaking work at Bayer.
+              </ListItem>
+              <ListItem
+                href='https://www.launchcode.com'
+                title='LaunchCode'
+              >
+                A non-profit for free education.
+              </ListItem>
+              <ListItem
+                href='https://growthday.com'
+                title='GrowthDay'
+              >
+                Join hundreds of thousands of users in personal growth.
               </ListItem>
             </ul>
           </NavigationMenuContent>

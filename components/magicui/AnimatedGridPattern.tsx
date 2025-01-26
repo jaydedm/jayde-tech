@@ -17,31 +17,36 @@ export function AnimatedGridPatternDemo() {
         </p>
           <div className='flex justify-center items-center space-x-24 p-4 mt-8'>
             <img
-              className='w-1/5 h-automax-w-[300px]'
+              className='w-1/6 h-automax-w-[300px]'
               src='https://upload.wikimedia.org/wikipedia/en/a/a4/Express_Scripts_logo.svg'
               alt='Express Scripts'
             />
             <img
-              className='"w-1/5 h-auto  max-w-[80px]'
+              className='"w-1/6 h-auto  max-w-[80px]'
               src='https://upload.wikimedia.org/wikipedia/commons/f/f7/Logo_Bayer.svg'
               alt='Bayer'
             />
             <img
-              className='w-1/5 h-auto  max-w-[100px]'
+              className='w-1/6 h-auto  max-w-[100px]'
               src='https://upload.wikimedia.org/wikipedia/commons/a/ad/Seal_of_the_United_States_Department_of_Education.svg'
               alt='Seal of the United States Department of Education'
             />
             <img
-              className='w-1/5 max-w-[100px]]'
+              className='w-1/6 max-w-[100px]]'
               src='https://upload.wikimedia.org/wikipedia/commons/c/cc/AbbVie_logo.svg'
               alt='AbbVie'
             />
             <img
-              className='w-1/5 h-auto max-w-[150px]'
+              className='w-1/6 h-auto max-w-[150px]'
               src='https://upload.wikimedia.org/wikipedia/commons/a/af/Petco_Logo.svg'
               height={115}
               width={115}
               alt='Petco'
+            />
+            <img
+              className='w-1/6 h-auto max-w-[400px]'
+              src='https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2147971019/settings_images/VCRhiKjdRiKsatENi0mV_3Zaso_b_134x-8.png'
+              alt='GrowthDay'
             />
           </div>
       </div>
