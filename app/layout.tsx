@@ -1,14 +1,28 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { ThemeProvider } from './ThemeProvider'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Jayde Mitchell Tech',
-  description: 'A portfolio of Jayde Mitchells work in Software Architecture and Engineering'
+  title: 'Jayde Tech',
+  description: 'Your technology partner with years of experience.',
+  openGraph: {
+    title: "Jayde Tech",
+    description: "Your technology partner with years of experience.",
+    url: "https://jaydetech.com",
+    siteName: "Jayde Tech",
+    // images: [
+    //   {
+    //     url: "https://jaydetech.com/your-thumbnail.jpg", // Ensure this is a valid image
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Jayde Tech Logo",
+    //   },
+    // ],
+    type: "website",
+  },
 }
 
 export default function RootLayout({
