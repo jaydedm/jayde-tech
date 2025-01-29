@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     description: "Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.",
     url: "https://jaydetech.com",
     siteName: "Jayde Tech",
-    // images: [
-    //   {
-    //     url: "https://jaydetech.com/your-thumbnail.jpg", // Ensure this is a valid image
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Jayde Tech Logo",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://s3.us-west-2.amazonaws.com/jaydemitchell.com/Jayde-Tech-Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Jayde Tech Logo",
+      },
+    ],
     type: "website",
   },
 }
