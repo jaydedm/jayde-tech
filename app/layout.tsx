@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Jayde Tech',
-  description: 'Your technology partner with years of experience.',
+  description: 'Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.',
   openGraph: {
     title: "Jayde Tech",
-    description: "Your technology partner with years of experience.",
+    description: "Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.",
     url: "https://jaydetech.com",
     siteName: "Jayde Tech",
     // images: [
