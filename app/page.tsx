@@ -1,15 +1,15 @@
 import { AnimatedGridPatternDemo } from '@/components/magicui/AnimatedGridPattern'
 import { TechStackCloud } from '@/components/magicui/TechStackCloud'
 import LiveDemoLinkButton from '@/components/ui/LiveDemoLinkButton'
-import { Navigation } from '@/components/ui/Navigation'
+import { Navigation } from '@/components/navigation/Navigation'
 import SourceButton from '@/components/ui/SourceButton'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
-      <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-        <div className='w-full'>
+      <main className='flex min-h-screen flex-col items-center justify-between p-16'>
+        <div className='w-full pb-24'>
           <Navigation />
           <AnimatedGridPatternDemo />
         </div>
@@ -28,38 +28,47 @@ export default function Home() {
               Proven success, generating millions in value for companies of all
               sizes.
             </p>
-            <div className='flex justify-normal items-center space-x-8 mt-4'>
-              <img
-                className='w-1/5 h-auto max-w-[80px]'
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vt1rdyw4FPgjpm0j86zbXgQm7-dl3GiYtg&s'
-                alt='Amazon AWS Solutions Architect Certification'
-              />
-              <img
-                className='w-1/5 h-auto max-w-[80px]'
-                src='https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg'
-                alt='MIT Logo'
-              />
-              <img
-                className='"w-1/5 h-auto  max-w-[150px]'
-                src='https://upload.wikimedia.org/wikipedia/commons/9/98/Berklee_College_of_Music_logo_and_wordmark.svg'
-                alt='Berklee College of Music Logo'
-              />
-              <Image
-                className='"w-1/5 h-auto  max-w-[75px]'
-                src={'/missouriseal.png'}
-                alt='University of Missouri Seal'
-                width='75'
-                height='75'
-              />
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-8 mt-4'>
+              <div className='flex flex-col justify-end items-center'>
+                <img
+                  className='h-auto max-w-[80px]'
+                  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vt1rdyw4FPgjpm0j86zbXgQm7-dl3GiYtg&s'
+                  alt='Amazon AWS Solutions Architect Certification'
+                />
+              </div>
+              <div className='flex flex-col justify-end items-center'>
+                <Image
+                  className='"w-1/5 h-auto  max-w-[75px]'
+                  src={'/missouriseal.png'}
+                  alt='University of Missouri Seal'
+                  width='75'
+                  height='75'
+                />
+              </div>
+              <div className='flex flex-col justify-end items-center'>
+                <img
+                  className='h-auto max-w-[150px]'
+                  src='https://upload.wikimedia.org/wikipedia/commons/9/98/Berklee_College_of_Music_logo_and_wordmark.svg'
+                  alt='Berklee College of Music Logo'
+                />
+              </div>
+              <div className='flex flex-col justify-end items-center'>
+                <img
+                  className='h-auto max-w-[80px]'
+                  src='https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg'
+                  alt='MIT Logo'
+                />
+              </div>
             </div>
           </div>
-          <div className='col-span-2'>
-            <TechStackCloud />
-          </div>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-5 items-end w-full mt-8'>
+        <div className='col-span-2'>
+          <TechStackCloud />
+        </div>
+
+        <div className='grid grid-cols-1 lg:grid-cols-5 items-end w-full'>
           <div className='col-span-4'></div>
-          <div className='lg:text-8xl font-bold text-right items-end col-span-1'>
+          <div className='lg:text-8xl font-bold text-center text-4xl pb-16 lg:pb-0 lg:text-right items-end col-span-1'>
             <span>CASE</span>
             <br></br>
             <span>STUDY</span>
@@ -94,11 +103,14 @@ export default function Home() {
                   <li>Prevent double-booking ticket sales.</li>
                   <li>Have an animated interactive seating map.</li>
                   <li>Have code-free administrative editing tools.</li>
-                  <li>User tools to manage their tickets and problems to relieve box office bottleneck</li>
+                  <li>
+                    User tools to manage their tickets and problems to relieve
+                    box office bottleneck
+                  </li>
                   <li>Have a lightning-fast UX.</li>
                 </ul>
               </div>
-              <div className='col-span-1'>
+              <div className='col-span-1 lg:pt-0 pt-8'>
                 <div className='flex space-x-8'>
                   <SourceButton />
                   <LiveDemoLinkButton />
@@ -112,12 +124,15 @@ export default function Home() {
               alt='Desert Theatricals Demo Image'
               width='2000'
               height='1682'
-              className='-ml-32'
+              className='lg:-ml-32'
             />
           </div>
         </div>
       </main>
-      <div className='mobile z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white p-20 bg-gradient-to-r from-purple-600 via-rose-500 to-indigo-400 text-transparent bg-clip-text' style={{display: 'none'}}>
+      <div
+        className='mobile z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-black dark:text-white p-20 bg-gradient-to-r from-purple-600 via-rose-500 to-indigo-400 text-transparent bg-clip-text'
+        style={{ display: 'none' }}
+      >
         <p>The mobile experience is not ready.</p>
         <br></br>
         <p>Please view on a device with a larger display.</p>

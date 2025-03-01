@@ -2,27 +2,28 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Jayde Tech',
-  description: 'Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.',
+  description:
+    'Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.',
   openGraph: {
-    title: "Jayde Tech",
-    description: "Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.",
-    url: "https://jaydetech.com",
-    siteName: "Jayde Tech",
+    title: 'Jayde Tech',
+    description:
+      'Jayde Tech - High-impact, cost-effective solutions from startup foundations to engineering software that scales for millions of users.',
+    url: 'https://jaydetech.com',
+    siteName: 'Jayde Tech',
     images: [
       {
-        url: "https://s3.us-west-2.amazonaws.com/jaydemitchell.com/Jayde-Tech-Logo.png",
+        url: 'https://s3.us-west-2.amazonaws.com/jaydemitchell.com/Jayde-Tech-Logo.png',
         width: 1200,
         height: 630,
-        alt: "Jayde Tech Logo",
-      },
+        alt: 'Jayde Tech Logo'
+      }
     ],
-    type: "website",
-  },
+    type: 'website'
+  }
 }
 
 export default function RootLayout({
@@ -32,7 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-        <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail'
+        />
+      </head>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

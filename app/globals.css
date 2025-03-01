@@ -72,7 +72,7 @@
 body {
   overflow: visible !important
 }
-
+/*
 @media screen and (max-width: 1520px) {
   main {
     display: none !important;
@@ -82,6 +82,6 @@ body {
   .mobile {
     display: block !important
   }
-}
+} */
 
 

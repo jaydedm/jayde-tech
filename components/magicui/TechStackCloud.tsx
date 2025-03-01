@@ -1,41 +1,43 @@
 'use client'
 
-import IconCloud from "@/components/magicui/icon-cloud";
+import { IconCloud } from './icon-cloud'
 
 const slugs = [
-  "typescript",
-  "javascript",
-  "java",
-  "react",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "nextdotjs",
-  "prisma",
-  "amazonaws",
-  "postgresql",
-  "vercel",
-  "testinglibrary",
-  "jest",
-  "tailwindcss",
-  "docker",
-  "git",
-  "jira",
-  "github",
-  "gitlab",
+  'typescript',
+  'javascript',
+  'react',
+  'html5',
+  'css3',
+  'nodedotjs',
+  'nextdotjs',
+  'prisma',
+  'postgresql',
+  'vercel',
+  'testinglibrary',
+  'jest',
+  'graphql',
+  'tailwindcss',
+  'docker',
+  'git',
+  'jira',
+  'github',
+  'gitlab',
   'redis',
   'redux',
-  "visualstudiocode",
   'reactquery',
   'openai',
   'trpc',
-  "figma",
-];
+  'figma'
+]
 
 export function TechStackCloud() {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  )
+
   return (
-    <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lgpx-20 pb-20 pt-8 ">
-      <IconCloud iconSlugs={slugs} />
+    <div className='relative flex h-full w-full max-w-[80rem] items-center justify-center overflow-hidden rounded-lgpx-20 pb-8 pt-8 '>
+      <IconCloud images={images} />
     </div>
-  );
+  )
 }
