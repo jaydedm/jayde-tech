@@ -16,6 +16,7 @@ interface GridPatternProps {
   maxOpacity?: number;
   duration?: number;
   repeatDelay?: number;
+  zIndex?: number;
 }
 
 export function GridPattern({
@@ -29,6 +30,7 @@ export function GridPattern({
   maxOpacity = 0.5,
   duration = 4,
   repeatDelay = 0.5,
+  zIndex = 0,
   ...props
 }: GridPatternProps) {
   const id = useId();
@@ -97,6 +99,7 @@ export function GridPattern({
   return (
     <svg
       ref={containerRef}
+      style={{zIndex: zIndex}}
       aria-hidden="true"
       className={cn(
         "pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30",

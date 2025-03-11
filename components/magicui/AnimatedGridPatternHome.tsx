@@ -40,7 +40,7 @@ const images = [
   }
 ]
 
-export function AnimatedGridPatternDemo() {
+export function AnimatedGridPatternHome() {
   return (
     <>
       <div className='relative flex h-[500px] lg:h-[700px] w-full justify-center overflow-hidden rounded-lg bg-background p-20'>

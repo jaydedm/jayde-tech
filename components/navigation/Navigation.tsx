@@ -15,6 +15,7 @@ import {
 import { cn } from '@/lib/utils'
 import { ArrowUpRight } from 'lucide-react'
 import { DrawerNav } from './Drawer'
+import { redirect } from 'next/navigation'
 
 interface ListItemProps extends React.ComponentPropsWithoutRef<'a'> {
   title: string
@@ -26,10 +27,18 @@ export function Navigation() {
     <>
       <DrawerNav />
       <NavigationMenu className='ml-auto mr-0 '>
-        <div className='font-extrabold text-l'>JAYDE MITCHELL</div>
+        <div
+          style={{ cursor: 'pointer' }}
+          className='font-extrabold text-l'
+          onClick={() => redirect('/')}
+        >
+          JAYDE MITCHELL
+        </div>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+            <NavigationMenuTrigger className='bg-transparent'>
+              Resources
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
                 <li className='row-span-3'>
@@ -79,8 +88,10 @@ export function Navigation() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Live Projects</NavigationMenuTrigger>
-            <NavigationMenuContent>
+            <NavigationMenuTrigger className='bg-transparent'>
+              Live Projects
+            </NavigationMenuTrigger>
+            <NavigationMenuContent style={{ zIndex: 20 }}>
               <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
                 <li className='row-span-3'>
                   <NavigationMenuLink asChild>
@@ -127,7 +138,7 @@ export function Navigation() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem className='hidden md:flex'>
+          <NavigationMenuItem className='hidden md:flex bg-transparent'>
             <Link href='mailto:jayde@jaydemitchell.com' legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Contact Me

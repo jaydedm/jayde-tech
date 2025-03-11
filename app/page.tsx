@@ -1,7 +1,6 @@
-import { AnimatedGridPatternDemo } from '@/components/magicui/AnimatedGridPattern'
+import { AnimatedGridPatternHome } from '@/components/magicui/AnimatedGridPatternHome'
 import { TechStackCloud } from '@/components/magicui/TechStackCloud'
 import LiveDemoLinkButton from '@/components/ui/LiveDemoLinkButton'
-import { Navigation } from '@/components/navigation/Navigation'
 import SourceButton from '@/components/ui/SourceButton'
 import Image from 'next/image'
 
@@ -10,8 +9,7 @@ export default function Home() {
     <>
       <main className='flex min-h-screen flex-col items-center justify-between p-16'>
         <div className='w-full pb-24'>
-          <Navigation />
-          <AnimatedGridPatternDemo />
+          <AnimatedGridPatternHome />
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-5 items-center'>
           <div className='col-span-3'>
