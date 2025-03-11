@@ -64,10 +64,10 @@ export function Navigation() {
                 </ListItem>
                 <ListItem
                   href='https://www.github.com/jaydedm'
-                  title='My Githhub'
+                  title='My GitHub'
                   icon
                 >
-                  My GitHub
+                  Come say hello!
                 </ListItem>
               </ul>
             </NavigationMenuContent>
