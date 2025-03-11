@@ -52,6 +52,8 @@ export function Navigation() {
                   href='https://docs.google.com/document/d/1wEkJZ4qpyiCI84VbAMPUC6oOGMNTWR8x_oqfqbMofr0/edit?usp=sharing'
                   title='My Resume'
                   icon
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   My work history with software.
                 </ListItem>
@@ -59,6 +61,8 @@ export function Navigation() {
                   href='https://www.youtube.com/playlist?list=PLIx4umQRRZ7bHnHyqRFjrfunhi4xitjZj'
                   title='Coding Fundamentals Lectures'
                   icon
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   My lecture series of Web Development Fundamentals.
                 </ListItem>
@@ -66,6 +70,8 @@ export function Navigation() {
                   href='https://www.github.com/jaydedm'
                   title='My GitHub'
                   icon
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Come say hello!
                 </ListItem>
