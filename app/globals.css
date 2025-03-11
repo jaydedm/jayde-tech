@@ -72,6 +72,12 @@
 body {
   overflow: visible !important
 }
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+
 /*
 @media screen and (max-width: 1520px) {
   main {
