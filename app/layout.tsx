@@ -1,8 +1,7 @@
+import { Navigation } from '@/components/navigation/Navigation'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Navigation } from '@/components/navigation/Navigation'
-import { AnimatedGridPatternDemo } from '@/components/magicui/AnimatedGridPatternHome'
 
 const inter = Inter({ subsets: ['latin'] })
 
